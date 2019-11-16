@@ -11,6 +11,9 @@ const location = cliArguments[0];
 const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=${process.env.APIKEY}`;
 
 const renderOnConsole = data => {
+  if (data.cod == "404") {
+    return log(chalk.bgRed.black("Please enter correct city name."));
+  }
   log(
     chalk.bgYellow.black(
       `Its ${chalk.bgBlue.black(data.main.temp)}°C and ${chalk.bgCyan.black(
