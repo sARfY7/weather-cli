@@ -1,0 +1,23 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "Find weather data using CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sARfY7/weather-cli.git"
+  },
+  "author": "Sarfaraz Ahmed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sARfY7/weather-cli/issues"
+  },
+  "homepage": "https://github.com/sARfY7/weather-cli#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0"
+  }
+}
