@@ -13,7 +13,11 @@ const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${location}&
 const renderOnConsole = data => {
   log(
     chalk.bgYellow.black(
-      `Its ${data.main.temp}°C and ${data.weather[0].main} in ${data.name}, ${data.sys.country}`
+      `Its ${chalk.bgBlue.black(data.main.temp)}°C and ${chalk.bgCyan.black(
+        data.weather[0].main
+      )} in ${chalk.bgGreen.black(data.name)}, ${chalk.bgMagenta.black(
+        data.sys.country
+      )}`
     )
   );
 };
